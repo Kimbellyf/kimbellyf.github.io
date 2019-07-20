@@ -1,0 +1,371 @@
+
+/*É utilizado -webkit-(compatibilidade p chrome e safari), moz- (comp firefox), o- (compat opera)
+*/
+	      /*	PRELOADER
+------------------------------*/
+        .containerpreloader{
+        	width: 100%;
+        	height:100%;
+        }
+        .containerpreloader h5{
+        	color:black;
+			position: absolute;
+			top:65%;
+			left:44%;
+
+        }
+
+
+		.preloader {
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%)  ; 
+		    width: 15%;
+		    height: 35%;
+		    /*overflow: visible; */
+		    /*animation : moreandless 10s linear ; */
+		   
+		   
+		}
+		.preloader h6{
+			bottom:0%;
+			color:black;
+		}
+		.preloader span {
+			position: absolute;
+			
+			width: 50px;
+			height: 50px;
+			/*background: #f00; */
+			background: #262662;
+			border-radius:50%;
+			
+		}
+
+		.preloader span:nth-child(1) {
+		    background: #f79f1f;
+		   /* box-shadow: 0 0 25px #12cbc4; */
+		    animation: moving-clockwise 2s linear infinite;
+		   
+		}
+		.preloader span:nth-child(2) {
+		    background: #12cbc4;		    
+		    animation: moving-clockwise 2s linear infinite;
+		    animation-delay: -1s;
+		}
+		.preloader span:nth-child(3) {
+		    background: #ed4c67;		   
+		    animation: moving-clockwise 2s linear infinite;
+		    animation-delay: -0.5s;
+		}
+		.preloader span:nth-child(4) {
+		    background: #a3cb38;		    
+		    animation: moving-clockwise 2s linear infinite;
+		    animation-delay: -1.5s;
+		}
+		
+		.preloader.complete span{
+			/*left: -50%; */
+		}
+
+
+		@keyframes moreandless{
+			0%{
+				width:  100px;
+				height: 100px;
+			}10%{
+				width: 100px;
+				height: 100px;
+		
+			}50%{
+				width: 150px;
+				height: 150px;
+
+			}90%{
+				width: 100px;
+				height: 100px;
+		
+			}100%{
+				width: 100px;
+				height: 100px;
+			}
+
+		}
+		@keyframes rotate{
+			0%{
+				transform : rotate(0deg);
+			}10%{
+				transform : rotate(0deg);
+		
+			}60%{
+				transform : rotate(90deg);
+
+			}90%{
+				transform : rotate(90deg);
+		
+			}100%{
+				transform : rotate(90deg);
+			}
+
+		}
+
+		@keyframes moving-clockwise{
+			0%{
+				top: 0;
+				left : 0;
+			}
+			25%{
+				top: 0;
+				left: 50%;
+			}
+			50%{
+				top: 50%;
+				left : 50%;
+			}
+			75%{
+				top: 50%;
+				left: 0;
+			}
+			100%{
+				top: 0;
+				left : 0;
+			}
+		}
+
+		@-webkit-keyframes moving-clockwise{
+			0%{
+				top: 0;
+				left : 0;
+			}
+			25%{
+				top: 0;
+				left: 50%;
+			}
+			50%{
+				top: 50%;
+				left : 50%;
+			}
+			75%{
+				top: 50%;
+				left: 0;
+			}
+			100%{
+				top: 0;
+				left : 0;
+			}
+		}
+		@-o-keyframes moving-clockwise{
+			0%{
+				top: 0;
+				left : 0;
+			}
+			25%{
+				top: 0;
+				left: 50%;
+			}
+			50%{
+				top: 50%;
+				left : 50%;
+			}
+			75%{
+				top: 50%;
+				left: 0;
+			}
+			100%{
+				top: 0;
+				left : 0;
+			}
+		}
+		@-moz-keyframes moving-clockwise{
+			0%{
+				top: 0;
+				left : 0;
+			}
+			25%{
+				top: 0;
+				left: 50%;
+			}
+			50%{
+				top: 50%;
+				left : 50%;
+			}
+			75%{
+				top: 50%;
+				left: 0;
+			}
+			100%{
+				top: 0;
+				left : 0;
+			}
+		}
+
+
+		@KeyFrames animacao-juntas{
+			from{/*Estado inicial*/
+				background:red;
+				animation : moreandless 3s linear 
+				
+			}
+			to{/*Estado final*/
+				background:yellow;
+				
+
+			}
+		}
+		@keyframes change-background {
+	      0% {
+	        background: blue;
+	      }
+	      50% {
+	        background: orange;
+	      }
+	      100% {
+	        background: green;
+	      }
+	    }
+
+
+
+    /* -----------Animaçoes intro --------------- */
+
+	    @-webkit-keyframes blink {
+		    0% { opacity: 1; }
+		    50% { opacity: 1; }
+		    50.01% { opacity: 0; }
+		    100% { opacity: 0; }
+		}
+		@-moz-keyframes blink {
+		    0% { opacity: 1; }
+		    50% { opacity: 1; }
+		    50.01% { opacity: 0; }
+		    100% { opacity: 0; }
+		}
+		@-ms-keyframes blink {
+		    0% { opacity: 1; }
+		    50% { opacity: 1; }
+		    50.01% { opacity: 0; }
+		    100% { opacity: 0; }
+		}
+		@-o-keyframes blink {
+		    0% { opacity: 1; }
+		    50% { opacity: 1; }
+		    50.01% { opacity: 0; }
+		    100% { opacity: 0; }
+		}
+		@keyframes blink {
+		    0% { opacity: 1; }
+		    50% { opacity: 1; }
+		    50.01% { opacity: 0; }
+		    100% { opacity: 0; }
+		}
+
+	 /* -----------Animaçoes maquina de escrever --------------- */
+
+	  @keyframes blinkcursor {
+	    0%, 100% {
+	      opacity: 1;
+	    }
+	    50% {
+	      opacity: 0;
+	    }
+	  }
+	  #restopaddnotitulomaquina{
+	  	font-weight: 700;
+	  	max-width: 480px;
+	    text-align: center;
+	    margin: 60px auto;
+	    font-family: 'Courier New', Courier, monospace;
+	    color: #ff1493;
+	  }
+	  #restopaddnotitulomaquina::after{
+	  	content: '|';
+	    color:white;
+	    opacity: 1;
+	    margin-left: 5px;
+	    display: inline-block;
+	    animation: blinkcursor .7s infinite;
+	  }
+	    
+
+		
+	/*	Subir ao topo anima
+	------------------------------*/
+		#subirTopo {
+			text-decoration: none;
+			background: #a60880;
+			bottom: 20px;
+			right: 20px;
+			color: #fff;
+			text-align: center;
+			cursor: pointer;
+			padding: 15px;
+			font-size: 22px;
+			font-weight: bold;
+			text-transform: uppercase;
+			position: fixed;
+			border: 0;
+			font-family: sans-serif;
+			opacity: .6;
+			z-index: 1;
+		}
+
+		#subirTopo:hover {
+			opacity:2;
+		}
+
+		  /*	ANIMAÇÃO CAIXA
+		------------------------------*/
+
+		@KeyFrames animacao-caixa{
+			from{/*Estado inicial*/
+				background:red;
+				border-radius: 0px;
+				top:0;
+				left:0;
+			}
+			to{/*Estado final*/
+				background:green;
+				border-radius: 300px;
+				top:200px;
+				left:200px;
+
+			}
+		}
+		@-webkit-KeyFrames animacao-caixa{
+			from{/*Estado inicial*/
+				background:red;
+				border-radius: 0px;
+			}
+			to{/*Estado final*/
+				background:green;
+				border-radius: 300px;
+
+			}
+		}
+		@-moz-KeyFrames animacao-caixa{
+			from{/*Estado inicial*/
+				background:red;
+				border-radius: 0px;
+			}
+			to{/*Estado final*/
+				background:green;
+				border-radius: 300px;
+
+			}
+		}
+		@-o-KeyFrames animacao-caixa{
+			from{/*Estado inicial*/
+				background:red;
+				border-radius: 0px;
+			}
+			to{/*Estado final*/
+				background:green;
+				border-radius: 300px;
+
+			}
+		}
+
+
+
+
