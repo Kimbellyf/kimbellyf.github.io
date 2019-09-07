@@ -146,6 +146,9 @@ p.lead
 .ferramentaseframeprogramacao{
 	background-color: background-color:#c4046c ; #c4046c
 }
+.btn{
+	color:white;
+}
 
 
 
@@ -153,15 +156,7 @@ p.lead
 
 
 
-
-
-
-
-
-		
-
-
-
+	
 		   #caixa{
 		   	width: 300px;
 		   	height: 300px;
@@ -370,26 +365,18 @@ p.lead
 		   	 width:100%;
 			 height:40%;
 		   	 background:#222;
-             color: white;
-
-             
+			 color: white;
+			 padding: 40px;
+			 margin-top: 50px;
+   
          }
          #titulocontato{
          	text-align:center;
 		   	padding:15px;
 		   	color: white;
 		   	font-family: 'Roboto', sans-serif;
-
-         }
-
-           #textAreaMessageContato{
-           	width: 20em;
-           	height: 10em;
-
-
-
-		   }
-		   footer{
+		}
+		footer{
 		   	width:100%;
 			height:10%;
 		   	background: black;
@@ -409,6 +396,22 @@ p.lead
 		   /*----------------CONTACTUS
 
 -------------------------------------------------------*/
+
+.contato hr{
+	background-color: #ff007f;
+    width: 50px;
+    height: 3px;
+    border-top: 1px solid #34363e;
+    margin-top: 0;
+    display: inline-block;
+}
+.coriconescontatos{
+	color: #ff007f;
+}
+.corbotao{
+	background-color: #ff007f;
+	
+}
 .sub-form
 {
     background:#222;
